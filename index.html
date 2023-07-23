@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/40c29c26f3.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+
+<body>
+
+
+  <div class="container-fluid">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="fa-brands fa-instagram fa-lg"></i>
+          <B>INSTAGRAM</B>
+        </a>
+        <!-- Button trigger modal -->
+        <div class="d-flex justify-content-end-important">
+          <button type="button" class="btn btn-success mx-1 my-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Crear un Nuevo post
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Crear Un Nuevo Post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Caption</p>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                      style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Crear caption en tu Post</label>
+                  </div>
+                  
+                </div>
+                <div class="modal-footer">
+                  <div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="32"
+                      height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                      <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera" width="32"
+                      height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+                      <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    </svg>
+                  </div>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">
+                    Publicar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle mx-1 my-1" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="32"
+                  height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+                  <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">perfil</a></li>
+                <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
+                <li><a class="dropdown-item" href="#">Datos y privacidad</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item text-danger" href="#">Cerrar Sesion</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </nav>
+  <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+        role="tab" aria-controls="home-tab-pane" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-layout-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="3"
+          stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M4 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+          <path d="M4 13m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+          <path d="M14 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+          <path d="M14 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+        </svg></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+        role="tab" aria-controls="profile-tab-pane" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-layout-rows" width="32" height="32" viewBox="0 0 24 24" stroke-width="3"
+          stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+          <path d="M4 12l16 0" />
+        </svg></button>
+    </li>
+  </ul>
+  <div class="tab-content d-flex justify-content-center" id=" myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <div class="justify-content-center">
+        <div class="mx-2 my-3">
+          <img src="https://picsum.photos/id/100/367/267" class="rounded float-left" alt="..." width="452px">
+          <img src="https://picsum.photos/id/18/367/267" class="rounded float-center" alt="..." width="452">
+          <img src="https://picsum.photos/id/19/367/267" class="rounded float-right" alt="..." width="452">
+          <div class="mx-1 my-1">
+            <img src="https://picsum.photos/id/100/367/267" class="rounded float-left" alt="..." width="450px">
+            <img src="https://picsum.photos/id/18/367/267" class="rounded float-center" alt="..." width="450">
+            <img src="https://picsum.photos/id/19/367/267" class="rounded float-right" alt="..." width="450">
+          </div>
+          <div class="mx-1 my-1">
+            <img src="https://picsum.photos/id/100/367/267" class="rounded float-left" alt="..." width="450px">
+            <img src="https://picsum.photos/id/18/367/267" class="rounded float-center" alt="..." width="450">
+            <img src="https://picsum.photos/id/19/367/267" class="rounded float-right" alt="..." width="450">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade mx-4 my-4" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+      tabindex="0">
+
+      <div class="card" style="width: 30rem;">
+        <div class="container mx-2 my-2">
+          <div class="row">
+            <div class="col text-left"><b>Un Hermoso Paisaje</b></div>
+            <div class="col text-right d-flex justify-content-end">
+              <p>21/11</p>
+            </div>
+          </div>
+        </div>
+        <img src="https://picsum.photos/id/10/367/267" class="card-img" alt="...">
+        <div class="card-body">
+          <div><b> 1.000.000 Likes </b></div>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card row mx-2 my-2" style="width: 30rem;">
+        <div class="container mx-2 my-2">
+          <div class="row">
+            <div class="col text-left"><b>Un Hermoso Paisaje</b></div>
+            <div class="col text-right d-flex justify-content-end">
+              <p>21/11</p>
+            </div>
+          </div>
+        </div>
+        <img src="https://picsum.photos/id/18/367/267" class="card-img" alt="...">
+        <div class="card-body">
+          <div><b> 1.000.000 Likes </b></div>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card row mx-2 my-2" style="width: 30rem;">
+        <div class="container mx-2 my-2">
+          <div class="row">
+            <div class="col text-left"><b>Un Hermoso Paisaje</b></div>
+            <div class="col text-right d-flex justify-content-end">
+              <p>21/11</p>
+            </div>
+          </div>
+        </div>
+        <img src="https://picsum.photos/id/10/367/267" class="card-img" alt="...">
+        <div class="card-body">
+          <div><b> 1.000.000 Likes </b></div>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
